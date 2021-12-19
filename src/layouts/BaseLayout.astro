@@ -1,0 +1,23 @@
+---
+import Topti from "../components/Topti.astro";
+// src/layouts/BaseLayout.astro
+const { title } = Astro.props;
+---
+
+<html>
+  <head>
+    <title>{title}</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <Topti />
+      
+      <slot />
+    </div>
+    <!-- <script src={Astro.resolve("../assets/js/firebase.js")}></script> -->
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-vue": "^0.2.1",
+    "astro": "^0.21.11",
+    "prettier-plugin-astro": "^0.0.11",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "firebase": "^9.6.1"
+  }
+}
